@@ -8,11 +8,12 @@
     src: url(fuente/SF-Pro-Display-Black.otf);
 }
 
-.container{
+.contenedor{
     min-width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
     box-sizing: border-box !important;
+    background: #1d1d1d;
 }
 
 /* Navbar */
@@ -31,10 +32,6 @@
 }
 
 /* Slide */
-
-body > div > div > div{
-    height: 100vh !important;
-}
 
 body > div > div > a{
     cursor: default;
@@ -227,6 +224,14 @@ body > div > div.row > div.cards > div > div > p{
 
 /* Portfolio clientes */
 
+body > div.contenedor > div.row{
+    margin-bottom: 0px !important;
+}
+
+body > div.contenedor > div.row > div.row{
+    margin-bottom: 0px !important;
+}
+
 body > div > div.row > div > div.clientes > h1{
     text-align: center;
     color: #fff;
@@ -265,10 +270,6 @@ body > div > div.row > div.row > div > img:hover{
     filter: grayscale(0);
 }
 
-body > div > div.row{
-    margin-bottom: 0px !important;
-}
-
 /* Formulario */
 
 body > div > div:nth-child(4){
@@ -276,11 +277,97 @@ body > div > div:nth-child(4){
     padding: 100px;
 }
 
+body > div.contenedor > div.container_contacto > form > div.contacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+body > div.contenedor > div.container_contacto > form > div.contacto > div.enviar > a{
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    color: #000;
+    font-family: "bold";
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+body > div.contenedor > div.container_contacto > form > div.contacto > div.enviar > a:hover{
+    background: #000;
+    color:#fff;
+}
+
+body > div.contenedor > div.container_contacto > form > div.contacto > div.datos > a:nth-child(1){
+    color: #000;
+    font-size: 20px;
+    font-family: "bold";
+    font-weight: 300;
+
+}
+
+body > div.contenedor > div.container_contacto > form > div.contacto > div.datos > a:nth-child(2){
+    color: #000;
+    font-size: 20px;
+    font-family: "bold";
+    font-weight: 300;
+    margin-left: 10px;
+
+}
+
+body > div.contenedor > div.container_contacto > form > div.contactanos > h1{
+    margin-bottom: 80px;
+    color: #000;
+    font-family: "bold";
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+body > div.contenedor > div.container_contacto > form > div.contactanos > h2{
+    font-size: 40px;
+    font-family: "bold";
+    font-weight: 300;
+    color:#202020;
+}
 /* Footer */
 
 body > div > footer{
     background: #000 !important;
     padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+}
+
+body > div.contenedor > footer > div > div > div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "bold";
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #000 !important;
+    -webkit-box-shadow: 0 1px 0 0 #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    color: #000 !important;
 }
