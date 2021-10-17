@@ -1,0 +1,286 @@
+@font-face{
+  font-family: "bold";
+  src: url(fuente/SF-Pro.ttf);
+}
+
+@font-face{
+    font-family: "black";
+    src: url(fuente/SF-Pro-Display-Black.otf);
+}
+
+.container{
+    min-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Navbar */
+
+.nav-wrapper{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000;
+}
+
+.nav-wrapper ul li a{
+    font-family: "bold";
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+/* Slide */
+
+body > div > div > div{
+    height: 100vh !important;
+}
+
+body > div > div > a{
+    cursor: default;
+}
+
+body > div > div > ul > li.indicator-item.active{
+    width: 50px !important;
+    height: 15px !important;
+    border-radius: 0 !important;   
+    background: #fff !important;
+}
+
+body > div > div > ul > li{
+    width: 50px !important;
+    height: 15px !important;
+    border-radius: 0 !important;  
+    background-color: transparent !important;
+    border: 2px solid #fff !important;
+}
+
+body > div > div > div{
+    position: relative;
+}
+
+body > div > div > div > h1{
+    position: absolute;
+    font-size: 70px;
+    margin-left: 70px;
+    top:18%;
+    color: #fff;
+    font-family: "black";
+}
+
+body > div > div > div > p{
+    position: absolute;
+    font-size: 40px;
+    margin-left: 70px;
+    top: 35%;
+    color: #fff;
+    font-family: "bold";
+    font-weight: 300;
+}
+
+body > div > div > div > a{
+    position: absolute;
+    font-size: 15px;
+    margin-left: 70px;
+    top: 50%;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: "bold";
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+body > div > div > div > a:hover{
+    background: #fff;
+    color: #000;
+}
+
+body > div > div.carousel.carousel-slider > ul{
+    bottom: 20% !important;
+}
+
+#tesla{
+    position: absolute;
+    font-size: 15px;
+    margin: 0;
+    top: 85%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    font-family: "bold";
+    font-weight: 300;
+}
+
+/* Servicios */
+
+body > div > div.row{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(29,29,29,1) 100%);
+}
+
+body > div > div.row > div.col.s12.m12 > div{
+    display: flex;
+    flex-direction: column;
+}
+
+body > div > div.row > div > div.servicios > h1{
+    text-align: center;
+    color: #fff;
+    font-family: "bold";
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+body > div > div.row > div > div.servicios > h2{
+    text-align: center;
+    color: #d2d2d2;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: "bold";
+    font-weight: 300;
+}
+
+body > div > div.row > div > div.servicios > a{
+    color: #fff;
+    text-decoration: revert;
+    font-size: 30px;
+    font-family: "bold";
+    font-weight: 300;
+    margin-bottom: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+body > div > div.row > div.col.s12.m12{
+    max-height: 450px;
+}
+
+/* tarjetas servicios */
+
+body > div > div.row > div.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body > div > div.row > div.cards > div{
+    margin: 0 !important;
+    margin-bottom: 35px !important;
+}
+
+body > div > div.row > div.cards > div:nth-child(1) > div{
+    text-align: end;
+}
+
+body > div > div.row > div.cards > div:nth-child(3) > div{
+    text-align: end;
+}
+
+body > div > div.row > div.cards > div:nth-child(5) > div{
+    text-align: end;
+}
+
+body > div > div.row > div.cards > div{
+    background: transparent;
+    box-shadow: none !important;
+}
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+  }
+.border-gradient-gris {
+    border-image-source: linear-gradient(to left, #fff, transparent);
+  }
+
+.border-gradient2 {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
+.border-gradient-gris2 {
+    border-image-source: linear-gradient(to left, transparent, #fff);
+}
+
+body > div > div.row > div.cards > div > div > span{
+    font-size: 25px;
+    font-family: "bold";
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+body > div > div.row > div.cards > div > div > p{
+    font-size: 15px;
+    font-family: "bold";
+    font-weight: lighter;
+}
+
+/* Portfolio clientes */
+
+body > div > div.row > div > div.clientes > h1{
+    text-align: center;
+    color: #fff;
+    font-family: "bold";
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+body > div > div.row > div > div.clientes > h2{
+    text-align: center;
+    color: #d2d2d2;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: "bold";
+    font-weight: 300;
+    margin-top: 150px;
+}
+
+body > div > div.row > div.row > div{
+    margin: 0;
+    padding: 0;
+    line-height: 0 !important;
+}
+
+body > div > div.row > div.row > div > img{
+    margin: 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+body > div > div.row > div.row > div > img:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+body > div > div.row{
+    margin-bottom: 0px !important;
+}
+
+/* Formulario */
+
+body > div > div:nth-child(4){
+    background: #f4f4f4;
+    padding: 100px;
+}
+
+/* Footer */
+
+body > div > footer{
+    background: #000 !important;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
